@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image";
 import Link from "next/link";
 
 export interface BlogProps {
-    id: number;
+    _id: string;
     title: string;
     description: string;
     image: StaticImageData;
@@ -20,7 +20,7 @@ const BlogItem = (blog : BlogProps) => {
   return (
     
     <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-black shadow-[-7px_7px_0px_#000] hover:shadow-lg hover:translate-x-1 hover:-translate-y-1 transition-all duration-300">
-        <Link  href={`/blog/${blog.id}`} >
+        <Link  href={`/blog/${blog._id}`} >
         <Image
         src={blog?.image}
         alt={"img"}

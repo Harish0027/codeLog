@@ -17,7 +17,7 @@ import blog_pic_16 from './blog_pic_16.png';
 import facebook_icon from './facebook_icon.png'
 import googleplus_icon from './googleplus_icon.png'
 import twitter_icon from './twitter_icon.png'
-import profile_icon from './profile_icon.png'
+import author_img from './author_img.png'
 import logo from './logo.png'
 import arrow from './arrow.png'
 import logo_light from './logo_light.png'
@@ -30,7 +30,7 @@ export const assets = {
     facebook_icon,
     googleplus_icon,
     twitter_icon,
-    profile_icon,
+    author_img,
     logo,
     arrow,
     logo_light,
@@ -48,7 +48,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:2,
@@ -58,7 +58,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:3,
@@ -68,7 +68,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:4,
@@ -78,7 +78,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:5,
@@ -88,7 +88,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:6,
@@ -98,7 +98,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:7,
@@ -108,7 +108,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:8,
@@ -118,7 +118,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:9,
@@ -128,7 +128,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:10,
@@ -138,7 +138,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:11,
@@ -148,7 +148,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:12,
@@ -158,7 +158,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:13,
@@ -168,7 +168,7 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:14,
@@ -178,7 +178,7 @@ export const assets = {
         date:Date.now(),
         category:"Lifestyle",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:15,
@@ -188,7 +188,7 @@ export const assets = {
         date:Date.now(),
         category:"Technology",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
     {
         id:16,
@@ -198,6 +198,6 @@ export const assets = {
         date:Date.now(),
         category:"Startup",
         author:"Alex Bennett",
-        author_img:profile_icon
+        author_img:author_img
     },
 ]

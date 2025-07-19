@@ -1,11 +1,27 @@
 "use client";
 
-import { blog_data } from "@/assets/assets";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BlogItem, { BlogProps } from "./BlogItem";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { blog_data } from "@/assets/assets";
 
 const BlogList = () => {
+  const [blogs,setBlogs]=useState<BlogProps[]>([]);
   const [category, setCategory] = useState<string>("All");
+
+  const fetchBlogs=async()=>{
+    const res=await axios.get("/api/blog");
+    if(res.data.success) {
+      setBlogs(res.data.blogs);
+    }else{
+      toast.error("Error in fetching Blogs")
+    }
+  }
+  useEffect(()=>{
+    fetchBlogs();
+  },[]);
+
   return (
     <div>
       <div className="flex justify-center gap-6 my-10">
@@ -53,7 +69,7 @@ const BlogList = () => {
         </button>
       </div>
       <div className="flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
-        {blog_data.map((blog:BlogProps, index:number) => {
+        {blogs.map((blog:BlogProps, index:number) => {
           return category === "All" ? (
             <div key={index}>
               <BlogItem {...blog} />
