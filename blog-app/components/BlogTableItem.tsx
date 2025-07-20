@@ -9,7 +9,7 @@ export interface BlogProps {
   _id: string;
   title: string;
   description: string;
-  image: string;
+  image: string|StaticImageData;
   date: number;
   category: string;
   author: string;
